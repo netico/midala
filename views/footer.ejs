@@ -1,0 +1,37 @@
+<footer class="container">
+		<hr>
+		<p>
+			&copy;2017-2020 <strong>Midala</strong> - Internet cloud mutualistico. Puoi
+			ottenere il codice sorgente del sito su
+			<a href="https://github.com/netico/midala">GitHub</a>.
+			Se riscontri qualche problema di navigazione,
+			<a href="https://github.com/netico/midala/issues/new">faccelo sapere</a>.<br>
+			<strong>Gondola-SD</strong> è un font creato da
+			<a href="https://www.fontsquirrel.com/fonts/list/foundry/steve-deffeyes">Steve Deffeyes</a>.
+			La licenza d'uso si trova
+			<a href="https://www.fontsquirrel.com/license/Gondola-SD">qui</a>.
+		</p>
+</footer>
+
+
+<script src="feather.min.js"></script>
+<script>
+var page = "<%= page %>";
+
+switch(page) {
+  case "home":
+    document.getElementById("home").classList.add("active");
+    break;
+  case "manifesto":
+	document.getElementById("manifesto").classList.add("active");
+    break;
+  case "support":
+	document.getElementById("support").classList.add("active");
+    break;
+  case "faq":
+	document.getElementById("faq").classList.add("active");
+    break;
+}
+
+feather.replace();
+</script>

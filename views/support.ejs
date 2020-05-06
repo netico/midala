@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('header.ejs') -%>
+  </head>
+  <body>
+    <%- include('nav.ejs') -%>
+    <main role="main" class="container">
+      <div class="container">
+
+				<%- unescape(message) %>
+        <h1>Supporto</h1>
+        <p class="lead">Come possiamo aiutarti?</p>
+				<form action="/send" method="post" class="was-validated">
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col">
+									<label for="name">Nome</label>
+									<input type="text" class="form-control" name="name" required>
+									<small class="form-text text-muted">
+										Fin qui è facile...
+									</small>
+								</div>
+								<div class="col">
+									<label for="sender">Indirizzo email</label>
+									<input type="email" class="form-control" name="sender" required>
+									<small class="form-text text-muted">
+										Verrai ricontatto a questo indirizzo, perciò deve essere un indirizzo valido!
+									</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="body">Messaggio</label>
+							<textarea cols="5" rows="5" class="form-control" name="body" required></textarea>
+							<small class="form-text text-muted">
+								Scrivi qui la tua richiesta
+							</small>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-success">Invia il messaggio</button>
+						</div>
+				</form>
+      </div>
+    </main>
+		<%- include('footer.ejs') -%>
+  </body>
+</html>
+
