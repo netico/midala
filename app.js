@@ -93,5 +93,5 @@ app.post('/send', function (req, res) {
 });
 
 app.listen(port, 'localhost', function() {
-  console.log(`Midala listening at http://localhost:${port}`)
+  console.log(`Midala listening at http://localhost:${port}`);
 });
