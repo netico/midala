@@ -1,93 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <%- include('header.ejs') -%>
-  </head>
-  <body>
-    <%- include('nav.ejs') -%>
+
+<head>
+  <%- include('header.ejs') -%>
+</head>
+
+<body>
+  <%- include('nav.ejs') -%>
     <main role="main" class="container">
       <div class="container">
         <h1>Frequently Asked Questions</h1>
         <p class="lead">
-					Probabilmente, le informazioni che cerchi sono in questa
-					pagina. Ma assicurati di aver letto anche il nostro
-					<a href="/manifesto">Manifesto</a>.
+          Probabilmente, le informazioni che cerchi sono in questa pagina. Ma assicurati di aver letto anche il nostro
+          <a href="/manifesto">Manifesto</a>.
         </p>
-        <span id="web"></span>
-        <h2><i class="align-text-bottom" data-feather="globe" height="35"></i> Web</h2>
-        <h4>
-					Voglio creare un sito Web.
-					Sono nel posto giusto?
-				</h4>
-        <p>
-					Su <a href="/">Midala</a> puoi trovare
-					alcune delle migliori applicazioni della galassia
-					<a href="https://it.wikipedia.org/wiki/Free_and_Open_Source_Software">FLOSS</a>
-					(<strong>Free/Libre e Open Source Software</strong>) per
-					creare da zero <strong>siti Web</strong>
-					e <strong>blog</strong>. In particolare, supportiamo
-					<a href="https://drupal.org">Drupal</a> e
-					<a href="https://wordpress.org">Wordpress</a>, ma c'è spazio
-					anche per progetti <em>custom</em>: <a href="/support">parliamone</a>!
-				</p>
-				<h4>Mi serve un certificato SSL! Potete aiutarmi?</h4>
-				<p>
-					Possiamo ottenere per te un <strong>certificato
-					SSL</strong> da
-					<a href="https://letsencrypt.org/">Let's Encrypt</a>,
-					una <strong>Certificate Authority</strong> no-profit che
-					fornisce certificati a più di 200 milioni di siti.
-					All'installazione, ci pensiamo noi.
-				</p>
-        <h4>Voglio poter amministrare il mio sito senza il vostro intervento. È possibile?</h4>
-        <p>Certamente lo è per i siti basati su <a href="https://drupal.org">Drupal</a>
-        e <a href="https://wordpress.org">Wordpress</a>. Per i progetti
-        <em>custom</em>, nella stragrande maggioranza dei casi sarà
-        comunque possibile aggiungere al tuo progetto un
-        <a href="https://it.wikipedia.org/wiki/Content_management_system">CMS</a>
-        <em>ad-hoc</em>.</p>
-        <h4>Se non mi servisse un semplice sito, ma una vera e propria applicazione Web?</h4>
-				<p>
-					Ecco <a href="https://alternativeto.net/platform/self-hosted/?feature=web-based&license=opensource">qui</a>
-				  un elenco (comunque parziale) delle applicazioni compatibili,
-				  tecnologicamente e non, con la nostra piattaforma.
-				</p>
-        <span id="email"></span>
-        <h2><i class="align-text-bottom" data-feather="mail" height="35"></i> Posta elettronica</h2>
-        <h4>Mi servono delle caselle di posta elettronica. Fornite questo servizio?</h4>
-				Possiamo innanzitutto aiutarti nell'acquisto di un
-				<a href="https://it.wikipedia.org/wiki/Dominio_di_primo_livello">dominio di primo livello</a>,
-				dal provider che sceglierai. Una volta ottenuto il dominio, potrai
-				utilizzare <a href="/">Midala</a> per la gestione della
-				posta elettronica, creando un numero illimitato di caselle
-				e di alias. Potrai inoltre consultare la posta
-				tramite l'apposita <a href="https://mail.midala.net">applicazione Web</a>.
-				</p>
-        <h4>È possibile gestire newsletter e mailing-list?</h4>
-        Potrai creare illimitatamente
-        <strong>liste di distribuzione</strong> oppure
-        gestire <strong>liste di discussione</strong>:
-        <blockquote class="blockquote">
-				<p class="mb-0">
-        Ci sono liste totalmente aperte, in cui chiunque può inviare un
-        messaggio, altre in cui l'invio dei messaggi è riservato agli iscritti,
-        oppure ci sono liste moderate, in cui tutti i messaggi devono
-        essere valutati da un moderatore e altre in cui solo alcuni
-        possono inviare messaggi, e non è possibile alcuna discussione
-        (dette più propriamente newsletter).
-					<footer class="blockquote-footer">
-						<a href="https://it.wikipedia.org/">Wikipedia</a>, alla pagina
-						<cite title="Source Title">
-							<a href="https://it.wikipedia.org/wiki/Mailing_list">
-								Mailing list
-							</a>
-						</cite>
-					</footer>
-				</blockquote>
-				Per fare tutto questo, esiste un'<a href="https://qmail.midala.net">applicazione Web</a> (in versione <em>beta</em>, ma ci stiamo lavorando!).
-				</p>
-			</div>
+        <h2 id="web"><i class="align-text-bottom" data-feather="globe" height="35"></i> Web</h2>
+        <div class="accordion" id="accordion-faq-web">
+          <div class="card">
+            <div class="card-header" id="faq-title-one">
+              <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+										Voglio creare un sito Web. Sono nel posto giusto?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-one" class="collapse show" aria-labelledby="faq-title-one" data-parent="#accordion-faq-web">
+              <div class="card-body">
+                Su <a href="/">Midala</a> puoi trovare alcune delle migliori applicazioni della galassia
+                <a href="https://it.wikipedia.org/wiki/Free_and_Open_Source_Software">FLOSS</a> (
+                <strong>Free/Libre e Open Source Software</strong>) per creare da zero <strong>siti Web</strong> e <strong>blog</strong>. In particolare, supportiamo
+                <a href="https://drupal.org">Drupal</a> e
+                <a href="https://wordpress.org">Wordpress</a>, ma c'è spazio anche per progetti <em>custom</em>: <a href="/support">parliamone</a>!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-title-two">
+              <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+										Mi serve un certificato SSL! Potete aiutarmi?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-two" class="collapse" aria-labelledby="faq-title-two" data-parent="#accordion-faq-web">
+              <div class="card-body">
+                Possiamo ottenere per te un <strong>certificato SSL</strong> da
+                <a href="https://letsencrypt.org/">Let's Encrypt</a>, una <strong>Certificate Authority</strong> no-profit che fornisce certificati a più di 200 milioni di siti. All'installazione, ci pensiamo noi.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-title-three">
+              <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+										Voglio amministrare il mio sito senza il vostro intervento. È possibile?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-three" class="collapse" aria-labelledby="faq-title-three" data-parent="#accordion-faq-web">
+              <div class="card-body">
+                Certamente si, per i siti basati su <a href="https://drupal.org">Drupal</a> e <a href="https://wordpress.org">Wordpress</a>. Per i progetti
+								<em>custom</em>, nella stragrande maggioranza dei casi sarà comunque possibile aggiungere al tuo progetto un
+								<a href="https://it.wikipedia.org/wiki/Content_management_system">CMS</a>
+								<em>ad-hoc</em>.
+							</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-title-four">
+              <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-four" aria-expanded="false" aria-controls="collapse-four">
+										Se non mi servisse un semplice sito, ma una vera e propria applicazione Web?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-four" class="collapse" aria-labelledby="faq-title-four" data-parent="#accordion-faq-web">
+              <div class="card-body">
+								Ecco <a href="https://alternativeto.net/platform/self-hosted/?feature=web-based&license=opensource">qui</a>
+								un elenco (comunque parziale) delle applicazioni
+								compatibili, per tecnologia e per <em>policy</em>, con la nostra piattaforma.
+							</div>
+            </div>
+          </div>
+        </div>
+
+				<h2 id="email"><i class="align-text-bottom" data-feather="mail" height="35"></i> Posta elettronica</h2>
+				<div class="accordion" id="accordion-faq-email">
+          <div class="card">
+            <div class="card-header" id="faq-email-title-one">
+              <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-one-email" aria-expanded="true" aria-controls="collapse-one-email">
+										Mi servono delle caselle di posta elettronica. Fornite questo servizio?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-one-email" class="collapse show" aria-labelledby="faq-email-title-one" data-parent="#accordion-faq-email">
+              <div class="card-body">
+								Possiamo innanzitutto aiutarti nell'acquisto di un
+								<a href="https://it.wikipedia.org/wiki/Dominio_di_primo_livello">dominio di primo livello</a>,
+								dal provider che sceglierai. Una volta ottenuto il dominio, potrai
+								utilizzare <a href="/">Midala</a> per la gestione della posta elettronica,
+								creando un numero illimitato di caselle e di alias. Potrai inoltre
+								consultare la posta tramite l'apposita <a href="https://mail.midala.net">applicazione Web</a>.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-email-title-two">
+              <h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-two-email" aria-expanded="false" aria-controls="collapse-two-email">
+										È possibile gestire newsletter e mailing-list?
+									</button>
+							</h5>
+            </div>
+            <div id="collapse-two-email" class="collapse" aria-labelledby="faq-email-title-two" data-parent="#accordion-faq-email">
+              <div class="card-body">
+                Potrai creare illimitatamente
+								<strong>liste di distribuzione</strong> oppure gestire <strong>liste di discussione</strong>:
+								<blockquote class="blockquote">
+									<p class="mb-0">
+										Ci sono liste totalmente aperte, in cui chiunque può inviare un messaggio, altre in cui l'invio dei messaggi è riservato agli iscritti, oppure ci sono liste moderate, in cui tutti i messaggi devono essere valutati da un moderatore e altre in cui solo alcuni possono inviare messaggi, e non è possibile alcuna discussione (dette più propriamente newsletter).
+										<footer class="blockquote-footer">
+											<a href="https://it.wikipedia.org/">Wikipedia</a>, alla pagina
+											<cite title="Source Title">
+												<a href="https://it.wikipedia.org/wiki/Mailing_list">
+													Mailing list
+												</a>
+											</cite>
+										</footer>
+								</blockquote>
+								Per fare tutto questo, esiste un'<a href="https://qmail.midala.net">applicazione Web</a>
+								(è un po' <em>old school</em> :), ma stiamo lavorando per migliorarla!).
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-		<%- include('footer.ejs') -%>
-  </body>
+    <%- include('footer.ejs') -%>
+</body>
 </html>
