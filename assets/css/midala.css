@@ -1,26 +1,34 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal !important;
-    font-style: normal !important;
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal !important;
+	font-style: normal !important;
 }
 
 html, body, footer {
-     font-family: 'Roboto' !important;
-     font-size: 11pt !important;
+	font-family: 'Roboto' !important;
+  font-size: 11pt !important;
 }
 
 body {
 	background-color: WhiteSmoke !important;
-	padding-top: 0.1em !important;
+	padding-top: 2.0rem !important;
 }
 
+/*
+main.container {
+	border-top: 5px solid red;
+	margin-top: 3em;
+}*/
+
+
 .midala-home {
-	margin-bottom: 2.1rem !important;
-	padding: 0.5rem !important;
+	margin-bottom: 0.1rem !important;
+	padding: 0rem 1.5rem !important;
 	text-align: center !important;
 	font-size: 1.2em !important;
 }
+
 .navbar {
 	font-size: 1.2em !important;
 }
@@ -62,4 +70,8 @@ footer.container > p {
 	padding-right: 0.6em !important;
 	padding-top: 0em !important;
 	margin-top: 0em !important;
+}
+
+.card {
+	margin-top: 1.1em !important;
 }

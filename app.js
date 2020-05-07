@@ -33,6 +33,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/assets'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/node_modules/feather-icons/dist/'));
+app.use(express.static(__dirname + '/node_modules/jquery/dist/'));
 
 // Routing
 app.get('/', function(req, res){
